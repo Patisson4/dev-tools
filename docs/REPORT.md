@@ -5,22 +5,22 @@ sudo apt install gitweb
 sudo api install lighttpd
 git instaweb
 ```
-![img.png](img.png)
-2.
+![img.jpg](img.jpg)
+### Task 2
 ```
 git merge --squash master
 git branch -D ci
 ```
-3.
+### Task 3
 ```
 git log --graph --decorate $(git rev-list -g --all)
 git branch old-master aae7df
 ```
-4.
+### Task 4
 ```
 git blame -L 32,32 prisma/seed.ts
 ```
-5.
+### Task 5
 ```
 npm install
 git bisect start
@@ -28,28 +28,28 @@ git bisect start
 npm run test
 git bisect [bad или good пока работает бинпоиск]
 ```
-6.
+### Task 6
 ```
 git filter-branch --tree-filter "rm -f .env" -- --all
 ```
-7.
+### Task 7
 ```
 git rebase -i HEAD~3 --exec "git commit --amend --reset-author --no-edit"
 ```
-8.
+### Task 8
 ```
 git config rerere.enabled true
 git merge feature
 ```
-9.
+### Task 9
 ```
 npm start
 ```
-10.
+### Task 10
 ```
 git gc
 ```
-11.
+### Task 11
 ```
 git checkout -b report
 git add docs/REPORT.md
